@@ -1,0 +1,16 @@
+@startuml
+
+class Team {
+    -player: ArrayList<Player>
+}
+
+class Player {
+    -firstName: String
+    -lastName: String
+    -position: String
+    -number: int
+}
+
+Team "1" o-- "*" Player
+
+@enduml
