@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class WaterRuleteGame {
+-WaterRuletePlayer[] players
+-WaterGun waterGun
++fillGame()
++round()
+}
+
+class WaterRuletePlayer {
+-int id
+-String name
+-Boolean isWet
++shoot()
+}
+
+class WaterGun {
+-int currentPosition
+-int waterPosition
++fillWaterGun()
++fireGun()
++nextStream()
+}
+
+WaterRuleteGame "1" *-- "1" WaterGun
+WaterRuleteGame "1" *-- "*" WaterRuletePlayer
+
+
+
+@enduml

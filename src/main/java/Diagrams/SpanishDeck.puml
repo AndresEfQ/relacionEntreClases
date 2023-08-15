@@ -1,0 +1,36 @@
+@startuml
+
+Deck "1" *-- "*" Card
+Card o-- CardNumber
+Card o-- Suit
+
+
+class Deck {
+-Card[] cards
+-Card[] pile
++shuffle()
++nextCard()
++availableCards()
++giveCards()
++showPile()
++showDeck()
+}
+
+class Card {
+-CardNumber number
+-Suit suit
+}
+
+enum CardNumber {
+1 ... 7
+10 ... 12
+}
+
+enum Suit {
+GOLD
+SWORDS
+CLUBS
+CUPS
+}
+
+@enduml

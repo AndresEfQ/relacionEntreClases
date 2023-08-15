@@ -1,7 +1,7 @@
 package Entities;
 
-import Enumeraciones.Race;
-import Enumeraciones.Size;
+import Enum.Race;
+import Enum.Size;
 
 public class Dog {
 

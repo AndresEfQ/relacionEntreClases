@@ -2,8 +2,8 @@ import Entities.Dog;
 import Entities.Person;
 import Entities.Player;
 import Entities.Team;
-import Enumeraciones.Race;
-import Enumeraciones.Size;
+import Enum.Race;
+import Enum.Size;
 
 import java.util.ArrayList;
 
