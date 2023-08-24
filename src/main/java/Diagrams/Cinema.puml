@@ -12,7 +12,7 @@ class Film {
 -String title;
 -int minutesDuration;
 -int minimumAge
-String director
+-String director
 }
 
 class ScreenRoom {
